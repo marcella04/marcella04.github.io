@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body { @apply bg-paper text-ink antialiased; }
+  :focus-visible { outline: 3px solid #E0A526; outline-offset: 2px; border-radius: 6px; }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+}
